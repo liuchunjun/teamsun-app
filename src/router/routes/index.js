@@ -1,7 +1,7 @@
 const routes = [
     {
         path: '/',
-        redirect: '/login'
+        redirect: '/home'
     },
     {
         path: '/login',
@@ -36,6 +36,16 @@ const routes = [
         component: () => import('@/views/demo/tabList.vue'),
         meta: {
             title: 'tabList',
+            keepAlive: true
+        }
+    },
+    {
+        path: '/home',
+        name: 'home',
+        // component: () => import('@/views/demo/tabList.vue'),
+        component: () => import('@/views/common/home/home.vue'),
+        meta: {
+            title: 'home',
             keepAlive: true
         }
     }

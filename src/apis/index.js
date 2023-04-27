@@ -7,8 +7,7 @@ Object.keys(files).forEach((key) => {
     if (!Object.prototype.hasOwnProperty.bind(apis)(matchList[1])) {
         apis[matchList[1]] = {}
     }
-    apis[matchList[1]][matchList[2]] = files[key].default
+    apis[matchList[1]][matchList[2]] = files[key]
 })
 
-console.log(apis)
 export default apis

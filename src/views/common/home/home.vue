@@ -1,9 +1,15 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
+import Apis from '@/apis/modules/common/account'
+console.log(
+    Apis.login({
+        user_name: 'admin',
+        pwd: 'YWRta2W4'
+    })
+)
 </script>
 
 <template>
-    <div></div>
+    <div>home</div>
 </template>
 
 <style lang="scss" scoped></style>
